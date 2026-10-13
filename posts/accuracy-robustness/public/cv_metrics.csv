@@ -1,0 +1,11 @@
+model,fold,roc_auc,accuracy
+accuracy_only,1,1.0,1.0
+accuracy_only,2,0.8125,0.875
+accuracy_only,3,1.0,1.0
+accuracy_only,4,1.0,0.7142857142857143
+accuracy_only,5,0.7083333333333333,0.5714285714285714
+accuracy_and_distance,1,1.0,1.0
+accuracy_and_distance,2,0.8125,0.875
+accuracy_and_distance,3,1.0,1.0
+accuracy_and_distance,4,1.0,0.8571428571428571
+accuracy_and_distance,5,0.6666666666666666,0.5714285714285714

@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #252925;
+  background: #faf9f5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+
+.page { width: min(100% - 2.5rem, 850px); margin: auto; }
+.site-header, nav, footer { display: flex; align-items: center; }
+.site-header { justify-content: space-between; gap: 1.5rem; padding: 2rem 0; border-bottom: 1px solid #deded7; }
+.site-name { font-weight: 700; font-size: 1.05rem; text-decoration: none; white-space: nowrap; }
+nav { flex-wrap: wrap; gap: 1.5rem; font-size: .9rem; }
+nav a, footer a { text-decoration: none; }
+nav a:hover, footer a:hover, .read-link:hover { color: #9a532f; }
+nav [aria-current="page"] { color: #9a532f; }
+
+.intro { padding: 4rem 0 3rem; }
+.eyebrow, .post-type { margin: 0; color: #a05a35; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+h1 { max-width: 720px; margin: 1.1rem 0 1.3rem; font-size: clamp(3.1rem, 8vw, 5.4rem); line-height: 1.05; letter-spacing: -.045em; }
+.intro > p:last-child { max-width: 590px; color: #646861; font-size: 1.15rem; line-height: 1.6; }
+
+.posts { padding-bottom: 8rem; }
+h2 { margin: 0 0 1.4rem; font-size: 1.75rem; }
+.post-card { display: flex; justify-content: space-between; align-items: end; gap: 2rem; padding: 2rem; background: #fff; border: 1px solid #e5e3dc; border-radius: 12px; box-shadow: 0 12px 35px rgb(55 45 30 / 4%); }
+h3 { margin: .8rem 0; font-size: clamp(1.65rem, 4vw, 2.15rem); line-height: 1.2; }
+h3 a { text-decoration: none; }
+h3 a:hover { color: #9a532f; }
+.post-card p:not(.post-type) { max-width: 560px; margin: 0; color: #646861; line-height: 1.65; }
+.read-link { flex: none; color: #a05a35; font-size: .9rem; font-weight: 650; text-decoration: none; white-space: nowrap; }
+
+footer { justify-content: space-between; gap: 1rem; padding: 1.6rem 0 2.5rem; border-top: 1px solid #deded7; color: #73776f; font-size: .85rem; }
+
+@media (max-width: 650px) {
+  .site-header { align-items: start; flex-direction: column; }
+  .intro { padding: 3.5rem 0 3rem; }
+  .post-card { align-items: start; flex-direction: column; }
+  .posts { padding-bottom: 5rem; }
+}
